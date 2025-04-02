@@ -1,0 +1,30 @@
+.live-hero {
+
+    .image-text {
+        
+        &__img-fade-container {
+
+            img {
+                max-width: 70%;
+                display: block;
+            }
+
+            &__fade {
+                max-width: 70%;
+            }
+        }
+
+        &__text-container {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            max-width: 50%;
+            padding-right: 5.6vw;
+        }
+    }
+}
+
+.live-hero.image-text {
+    position: relative;
+}

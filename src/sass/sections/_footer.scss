@@ -1,0 +1,7 @@
+@use '../configs/variaveis';
+.footer {
+    background-color: variaveis.$corCard;
+    p {
+        text-align: center;
+    }
+}

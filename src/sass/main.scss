@@ -1,0 +1,43 @@
+@use './configs/reset.scss';
+@use './configs/variaveis.scss';
+@use './sections/header';
+@use './sections/main-hero';
+@use './sections/image-text';
+@use './sections/designs';
+@use './sections/aviable';
+@use './sections/live-action-hero';
+@use './sections/footer';
+
+body {
+    background-color: variaveis.$corFundo;
+}
+
+@mixin title($fontSize: 38px) {
+    font-family: variaveis.$fontePrincipal;
+    font-weight: 500;
+    font-size: $fontSize;
+    color: variaveis.$corTextoPrincipal;
+}
+
+@mixin text($fontSize: 24px) {
+    font-family: variaveis.$fonteSecundaria;
+    font-weight: 600;
+    font-size: $fontSize;
+    color: variaveis.$corTextoSecundario;
+}
+
+.title--big {
+    @include title();
+}
+
+.title {
+    @include title(26px);
+}
+
+.text--big {
+    @include text();
+}
+
+.text {
+    @include text(18px);
+}

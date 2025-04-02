@@ -1,0 +1,36 @@
+.disponibilidade {
+    padding: 5.6vw;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 400px);
+        justify-content: space-evenly;
+        
+        &__item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                max-width: 200px;
+                margin-bottom: 15px;
+            }
+
+            h3 {
+                margin-bottom: 25px;
+            }
+
+            p {
+                text-align: center;
+                margin-bottom: 5px;
+            }
+
+        }
+    }
+}

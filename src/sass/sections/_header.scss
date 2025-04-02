@@ -1,0 +1,36 @@
+@use '../configs/variaveis';
+.header {
+    padding: 0 5.6vw 0;
+    display: flex;
+    justify-content: end;
+    position: sticky;
+    top: 0;
+    right: 0;
+
+    &__container-buttton {
+        
+        button {
+            padding: 20px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        &__not {
+            background-color: rgba($color: variaveis.$corTextoTerciario, $alpha: .8);
+            color: variaveis.$corTextoPrincipal;
+            border: 1px solid variaveis.$corTextoTerciario;
+            visibility: hidden;
+            margin-right: 20px;
+
+            &--is-visible {
+                visibility: visible;
+            }
+        }
+
+        &__find {
+            background-color: rgba($color: variaveis.$corFundo, $alpha: .8);
+            color: variaveis.$corTextoPrincipal;
+            border: 1px solid variaveis.$corTextoPrincipal;
+        }
+    }
+}
