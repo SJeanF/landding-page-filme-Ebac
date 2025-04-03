@@ -34,7 +34,8 @@ function minificaImg () {
 }
 
 function build () {
-    return gulp.parallel(minificaHtml, styles, obfuscaJS, minificaImg)();
+    return gulp.parallel(minificaHtml, styles, obfuscaJS, minificaImg);
 }
 
-module.exports.build = build;
+module.exports.build = build();
+
