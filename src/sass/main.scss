@@ -41,3 +41,22 @@ body {
 .text {
     @include text(18px);
 }
+
+@media (max-width: variaveis.$breakPointMobile) {
+
+    .title--big {
+        @include title(24px);
+    }
+    
+    .title {
+        @include title(16px);
+    }
+    
+    .text--big {
+        @include text(16px);
+    }
+    
+    .text {
+        @include text(14px);
+    }
+}

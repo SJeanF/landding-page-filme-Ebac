@@ -1,6 +1,13 @@
+@use '../configs/variaveis';
 .hero {
     padding: 5.6vw;
     display: grid;
     grid-template-columns: 50% 50%;
     align-items: center;
+}
+
+@media (max-width: variaveis.$breakPointMobile) {
+    .hero {
+        display: block;
+    }
 }

@@ -1,3 +1,4 @@
+@use '../configs/variaveis';
 .live-hero {
 
     .image-text {
@@ -27,4 +28,34 @@
 
 .live-hero.image-text {
     position: relative;
+}
+
+@media (max-width: variaveis.$breakPointTablet) {
+    .live-hero {
+
+        .image-text {
+
+            &__img-fade-container {
+
+                img {
+                    max-width: 100%;
+                }
+
+                &__fade {
+                    max-width: 100%
+                }
+            }
+
+            &__text-container {
+                position: static;
+                transform: none;
+                max-width: none;
+                padding-right: 0;
+            }
+        }
+    }
+
+    .live-hero.image-text {
+        position: static;
+    }
 }
